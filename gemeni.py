@@ -32,6 +32,7 @@ def send_image_to_gemini(image_path, prompt):
         # Set up the model
         model = genai.GenerativeModel('gemini-1.5-flash')
 
+
         # Prepare the message
         message = [
             prompt,
