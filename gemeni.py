@@ -30,7 +30,7 @@ def send_image_to_gemini(image_path, prompt):
         image_bytes = resize_image(image_path)
 
         # Set up the model
-        model = genai.GenerativeModel('gemini-pro-vision')
+        model = genai.GenerativeModel('gemini-1.5-flash')
 
         # Prepare the message
         message = [
